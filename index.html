@@ -18,6 +18,28 @@
 
     * { box-sizing: border-box; }
 
+    .game-link {
+      position: fixed;
+      z-index: 5;
+      top: 18px;
+      right: 20px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 16px;
+      border: 1px solid #9d8cff77;
+      border-radius: 999px;
+      background: #171629eF;
+      color: #f4f5fb;
+      font-size: 14px;
+      font-weight: 700;
+      text-decoration: none;
+      box-shadow: 0 8px 28px #0006;
+      transition: transform .18s ease, background .18s ease, box-shadow .18s ease;
+    }
+
+    .game-link:hover { transform: translateY(-2px); background: #292348; box-shadow: 0 10px 32px #9d8cff35; }
+
     body {
       margin: 0;
       min-height: 100vh;
@@ -125,6 +147,7 @@
   </style>
 </head>
 <body>
+  <a class="game-link" href="game.html" aria-label="네온 서바이버 게임하기">🎮 게임하기 <span aria-hidden="true">↗</span></a>
   <main class="wrap">
     <header>
       <div class="eyebrow">Hello, I'm a student developer</div>
